@@ -23,3 +23,8 @@ position = Vector2(256, 198)
 texture = ExtResource("2_to1ah")
 
 [node name="StaticBody2D" parent="." instance=ExtResource("3_cffmm")]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(688.5, 22)
+scale = Vector2(4.75781, 1.07812)
+texture = ExtResource("2_to1ah")
