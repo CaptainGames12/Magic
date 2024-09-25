@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://d250dvg8r1fpx"]
+
+[ext_resource type="PackedScene" uid="uid://c362wtd812p0c" path="res://player.tscn" id="1_qfx4p"]
+[ext_resource type="Texture2D" uid="uid://dcxwbmkilvgm8" path="res://icon.svg" id="2_to1ah"]
+[ext_resource type="PackedScene" uid="uid://cmu84y722frpf" path="res://floor.tscn" id="3_cffmm"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m3m72"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_m3m72")
+
+[node name="Player" parent="." instance=ExtResource("1_qfx4p")]
+position = Vector2(66, 108)
+
+[node name="Icon2" type="Sprite2D" parent="."]
+position = Vector2(754, 191)
+texture = ExtResource("2_to1ah")
+
+[node name="Icon3" type="Sprite2D" parent="."]
+position = Vector2(256, 198)
+texture = ExtResource("2_to1ah")
+
+[node name="StaticBody2D" parent="." instance=ExtResource("3_cffmm")]
